@@ -3,3 +3,5 @@
 Maker Media GmbH
 
 ***
+
+## Dockerfile zum Bau einer Containers mit Ubuntu, LXDE-Desktop und VNC
