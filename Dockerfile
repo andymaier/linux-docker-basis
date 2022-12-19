@@ -1,7 +1,8 @@
-FROM ubuntu:18.04
-RUN  apt-get update
+FROM ubuntu:22.10
+RUN apt-get update && apt upgrade && apt-get install -y software-properties-common
+RUN add-apt-repository ppa:xubuntu-dev/staging
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y lxde-core lxterminal
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y xubuntu-desktop
 RUN apt-get -y install tightvncserver firefox nano
 
 # files for VNC
